@@ -12,9 +12,9 @@ Xin Yao received his PhD degree from the Department of Computer Science, The Uni
 
 Research interests
 ======
-- Scalable distributed Systems
+- Scalable Distributed Systems (AI & Big Data)
 - Consistency & consensus protocols
-- Learned index & storage system
+- Learned index & storage system (Compression)
 - NVM/Fault tolerance
 - Erasure coding
 - Federated learning
