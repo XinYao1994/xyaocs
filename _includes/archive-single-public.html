@@ -33,10 +33,10 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %} 
     </h2> -->
-    {% if post.link %}
-      <p> [{{ post.id }}] {{ post.author }} {{ title }}. [<a href="{{ post.link }}">details</a>] [<a href="{{ post.paperurl }}">pdf</a>] [<a href="{{ post.opensource }}">code</a>]</p>
+    {% if post.opensource %}
+      <p> [{{ post.paper_id }}] {{ post.author }} {{ title }}. [<a href="{{ base_path }}{{ post.url }}" rel="permalink">details</a>] [<a href="{{ post.paperurl }}">pdf</a>] [<a href="{{ post.opensource }}">code</a>]</p>
     {% else %}
-      <p> [{{ post.id }}] {{ post.author }} {{ title }}. [<a href="{{ post.link }}">details</a>] [<a href="{{ post.paperurl }}">pdf</a>] </p>
+      <p> [{{ post.paper_id }}] {{ post.author }} {{ title }}. [<a href="{{ base_path }}{{ post.url }}" rel="permalink">details</a>] [<a href="{{ post.paperurl }}">pdf</a>] </p>
     {% endif %} 
     <!-- {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
